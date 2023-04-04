@@ -22,13 +22,6 @@ struct CoinInfoError {
     error: String
 }
 
-#[derive(Serialize, Deserialize)]
-#[serde(untagged)]
-enum ResponseType {
-  Ok(CoinInfo),
-  Err(CoinInfoError),
-}
-
 const CURRENCY: &str = "usd";
 
 async fn check_from_coingecko(name: &String) {
