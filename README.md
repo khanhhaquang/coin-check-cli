@@ -2,8 +2,16 @@
 
 A "blazing fast" command line tool for checking crypto price
 
-## Example
+### How to run
 
 ```sh
-coin --name ethereum
+cargo build --release
 ```
+
+then
+
+```sh
+./target/release/coin --name ethereum
+```
+
+-- Still finding a way to publish this one --
